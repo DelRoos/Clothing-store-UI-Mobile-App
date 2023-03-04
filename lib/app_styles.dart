@@ -12,6 +12,9 @@ const Color kWhite = Color(0xffffffff);
 
 const Color kBlack = Color(0xff111111);
 
+const Color kBorder = Color(0xffEAEAEA);
+const Color kBlue = Color(0xff347EFB);
+
 const Color kYellow = Color(0xffffd33c);
 
 const double kBorderRadius = 12.0;
