@@ -14,7 +14,7 @@ class ProductDetailPage extends StatefulWidget {
 }
 
 class _ProductDetailPageState extends State<ProductDetailPage> {
-  Counter _counter = Counter();
+  final Counter _counter = Counter();
 
   void _incrementCounter() {
     setState(() {
@@ -35,10 +35,10 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: GestureDetector(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 8),
           height: 60,
           width: double.infinity,
-          margin: EdgeInsets.symmetric(
+          margin: const EdgeInsets.symmetric(
             horizontal: kPaddingHorizontal,
           ),
           decoration: BoxDecoration(
@@ -78,12 +78,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: kPaddingHorizontal,
           ),
           child: Column(
             children: [
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               SizedBox(
                 height: SizeConfig.blockSizeVertical! * 50,
                 child: Stack(
@@ -121,11 +121,11 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                                       color: kBrown.withOpacity(0.11),
                                       spreadRadius: 0.0,
                                       blurRadius: 12,
-                                      offset: Offset(0, 5),
+                                      offset: const Offset(0, 5),
                                     ),
                                   ],
                                 ),
-                                padding: EdgeInsets.all(8),
+                                padding: const EdgeInsets.all(8),
                                 child: SvgPicture.asset(
                                     "assets/arrow_back_icon.svg"),
                               ),
@@ -141,11 +141,11 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                                     color: kBrown.withOpacity(0.11),
                                     spreadRadius: 0.0,
                                     blurRadius: 12,
-                                    offset: Offset(0, 5),
+                                    offset: const Offset(0, 5),
                                   ),
                                 ],
                               ),
-                              padding: EdgeInsets.all(8),
+                              padding: const EdgeInsets.all(8),
                               child: SvgPicture.asset(
                                   "assets/favorite_black_icon.svg"),
                             ),
@@ -156,7 +156,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ],
                 ),
               ),
-              SizedBox(height: 24),
+              const SizedBox(height: 24),
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -188,7 +188,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             shape: BoxShape.circle,
                             color: kWhite,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.remove,
                             color: kGrey,
                           ),
@@ -220,7 +220,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                             shape: BoxShape.circle,
                             color: kWhite,
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.add,
                             color: kGrey,
                           ),
@@ -230,7 +230,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                 ],
               ),
-              SizedBox(height: 8),
+              const SizedBox(height: 8),
               Row(
                 children: [
                   RatingBar.builder(
@@ -239,8 +239,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     minRating: 1,
                     direction: Axis.horizontal,
                     itemCount: 5,
-                    itemPadding: EdgeInsets.all(2),
-                    itemBuilder: (context, _) => Icon(
+                    itemPadding: const EdgeInsets.all(2),
+                    itemBuilder: (context, _) => const Icon(
                       Icons.star,
                       color: kYellow,
                     ),
@@ -249,7 +249,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                     },
                     unratedColor: kLightGrey,
                   ),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   RichText(
                     text: TextSpan(
                       text: '5.0',
@@ -270,7 +270,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   ),
                 ],
               ),
-              SizedBox(width: 8),
+              const SizedBox(width: 8),
               ReadMoreText(
                 "Big picture viral engagement. Let me know if you need me to crack any skulls. Strategic staircase productize pre launch, nor big data, pivot. On-brand but completeley fresh loop back run it up the flagpole no need to talk to users, just base it on the space calculator, but meeting assassin, so 4-blocker. Pushback. Open door policy customer centric it's a simple lift and shift job, so offline this discussion. Flesh that out through the lens of time to open the kimono my supervisor didn't like the latest revision you gave me can you switch back to the first revision?, for churning anomalies.",
                 trimLines: 2,
@@ -291,12 +291,12 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                   fontSize: SizeConfig.blockSizeHorizontal! * 4,
                 ),
               ),
-              SizedBox(height: 16),
-              Divider(
+              const SizedBox(height: 16),
+              const Divider(
                 height: 1,
                 color: kLightGrey,
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -310,7 +310,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           fontSize: SizeConfig.blockSizeHorizontal! * 3.5,
                         ),
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Row(
                         children: [
                           Container(
@@ -424,7 +424,7 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                           fontSize: SizeConfig.blockSizeHorizontal! * 3.5,
                         ),
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Row(
                         children: [
                           Container(
